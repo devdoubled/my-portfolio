@@ -1,0 +1,116 @@
+.project-wrapper {
+  width: 100%;
+
+  .project-title {
+    margin-bottom: 50px;
+    .main {
+      display: flex;
+      align-items: center;
+      font-size: 1.75rem;
+      margin-bottom: 10px;
+
+      .sign {
+        color: var(--primary);
+      }
+    }
+    .sub {
+      letter-spacing: 1.2px;
+    }
+  }
+
+  .project-complete {
+    width: 100%;
+    .complete-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.75rem;
+
+      .sign {
+        color: var(--primary);
+      }
+
+      .line {
+        height: 1px;
+        margin-left: 20px;
+        background-color: var(--primary);
+      }
+    }
+
+    .complete-list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  .project-small {
+    width: 100%;
+    .small-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.75rem;
+
+      .sign {
+        color: var(--primary);
+      }
+
+      .line {
+        height: 1px;
+        margin-left: 20px;
+        background-color: var(--primary);
+      }
+    }
+
+    .small-list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+  }
+}
+
+/* 2K/QHD (1920px-2559px) */
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .project-wrapper {
+    .project-title {
+      margin-top: 100px;
+      margin-bottom: 150px;
+    }
+    .project-complete {
+      margin-bottom: 150px;
+      .complete-title {
+        margin-bottom: 80px;
+      }
+    }
+    .project-small {
+      margin-bottom: 150px;
+      .small-title {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
+
+/* Full HD (1600px-1919px) */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .project-wrapper {
+    .project-title {
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+    .project-complete {
+      margin-bottom: 100px;
+      .complete-title {
+        margin-bottom: 50px;
+      }
+    }
+    .project-small {
+      margin-bottom: 100px;
+      .small-title {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

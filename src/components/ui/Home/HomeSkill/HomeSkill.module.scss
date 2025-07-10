@@ -1,0 +1,66 @@
+.home-skill {
+  width: 100%;
+
+  .home-skill-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+
+    .sign {
+      color: var(--primary);
+    }
+
+    .line {
+      width: 30%;
+      height: 1px;
+      margin-left: 20px;
+      background-color: var(--primary);
+    }
+  }
+
+  .home-skill-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .skill-design {
+      width: 38%;
+      background-color: red;
+    }
+
+    .skill-list {
+      width: 60%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+
+      .skill-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+  }
+}
+
+/* 2K/QHD (1920px-2559px) */
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .home-skill {
+    margin-bottom: 150px;
+    .home-skill-title {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+/* Full HD (1600px-1919px) */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .home-skill {
+    margin-bottom: 100px;
+    .home-skill-title {
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.card-item {
+  width: 100%;
+  border: 1px solid var(--gray);
+
+  .title {
+    font-size: 1.25rem;
+    padding: 10px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .content {
+    padding: 10px;
+    color: var(--gray);
+  }
+}

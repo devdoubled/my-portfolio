@@ -1,0 +1,158 @@
+.about-wrapper {
+  width: 100%;
+
+  .about-title {
+    margin-bottom: 50px;
+    .main {
+      display: flex;
+      align-items: center;
+      font-size: 1.75rem;
+      margin-bottom: 10px;
+
+      .sign {
+        color: var(--primary);
+      }
+    }
+    .sub {
+      letter-spacing: 1.2px;
+    }
+  }
+
+  .about-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .about-script {
+      width: 55%;
+
+      .script-text {
+        width: 100%;
+        margin-bottom: 40px;
+        color: var(--gray);
+        line-height: 2;
+      }
+    }
+  }
+
+  .about-skill {
+    width: 100%;
+    .skill-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.75rem;
+
+      .sign {
+        color: var(--primary);
+      }
+
+      .line {
+        height: 1px;
+        margin-left: 20px;
+        background-color: var(--primary);
+      }
+    }
+
+    .skill-list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.25rem;
+    }
+  }
+
+  .about-fun-fact {
+    width: 100%;
+    .fun-fact-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.75rem;
+
+      .sign {
+        color: var(--primary);
+      }
+
+      .line {
+        height: 1px;
+        margin-left: 20px;
+        background-color: var(--primary);
+      }
+    }
+
+    .fun-fact-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .fun-fact-list {
+        width: 55%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .fun-fact-item {
+          display: inline-block;
+          height: fit-content;
+          padding: 8px 12px;
+          color: var(--gray);
+          border: 1px solid var(--gray);
+        }
+      }
+
+      .fun-fact-decor {
+        flex: 1;
+      }
+    }
+  }
+}
+
+/* 2K/QHD (1920px-2559px) */
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .about-wrapper {
+    .about-title {
+      margin-top: 100px;
+      margin-bottom: 150px;
+    }
+    .about-content {
+      margin-bottom: 150px;
+    }
+    .about-skill {
+      margin-bottom: 150px;
+      .skill-title {
+        margin-bottom: 80px;
+      }
+    }
+    .about-fun-fact {
+      margin-bottom: 150px;
+      .fun-fact-title {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
+
+/* Full HD (1600px-1919px) */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .about-wrapper {
+    .about-title {
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+    .about-content {
+      margin-bottom: 100px;
+    }
+    .about-skill {
+      margin-bottom: 100px;
+      .skill-title {
+        margin-bottom: 50px;
+      }
+    }
+    .about-fun-fact {
+      margin-bottom: 100px;
+      .fun-fact-title {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
