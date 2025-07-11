@@ -103,7 +103,33 @@ export default function About() {
               />
             ))}
           </div>
-          <div className={cx("fun-fact-decor")}></div>
+          <div className={cx("fun-fact-decor")}>
+            <img
+              src="/images/shape.png"
+              alt="decor"
+              className={cx("decor-img", "img-1")}
+            />
+            <img
+              src="/images/shape-1.png"
+              alt="decor"
+              className={cx("decor-img", "img-2")}
+            />
+            <img
+              src="/images/logo-2.png"
+              alt="decor"
+              className={cx("decor-img", "img-3")}
+            />
+            <img
+              src="/images/shape.png"
+              alt="decor"
+              className={cx("decor-img", "img-4")}
+            />
+            <img
+              src="/images/shape-1.png"
+              alt="decor"
+              className={cx("decor-img", "img-5")}
+            />
+          </div>
         </div>
       </div>
     </div>

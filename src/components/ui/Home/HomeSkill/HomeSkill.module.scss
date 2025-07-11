@@ -21,12 +21,10 @@
   .home-skill-content {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
-    .skill-design {
+    .skill-decor {
       width: 38%;
-      background-color: red;
     }
 
     .skill-list {
@@ -52,6 +50,42 @@
     .home-skill-title {
       margin-bottom: 80px;
     }
+    .home-skill-content {
+      .skill-decor {
+        position: relative;
+        .decor-img {
+          user-select: none;
+          position: absolute;
+          height: auto;
+          object-fit: contain;
+        }
+        .img-1 {
+          width: 100px;
+          top: 15px;
+          left: 20px;
+        }
+        .img-2 {
+          width: 120px;
+          top: -30px;
+          right: 120px;
+        }
+        .img-3 {
+          width: 200px;
+          bottom: -10px;
+          left: 20px;
+        }
+        .img-4 {
+          width: 100px;
+          bottom: 45%;
+          left: 45%;
+        }
+        .img-5 {
+          width: 100px;
+          bottom: 105px;
+          right: 40px;
+        }
+      }
+    }
   }
 }
 
@@ -61,6 +95,41 @@
     margin-bottom: 100px;
     .home-skill-title {
       margin-bottom: 50px;
+    }
+    .home-skill-content {
+      .skill-decor {
+        position: relative;
+        .decor-img {
+          user-select: none;
+          position: absolute;
+          height: auto;
+          object-fit: contain;
+        }
+        .img-1 {
+          width: 80px;
+          top: 40px;
+          left: 20px;
+        }
+        .img-2 {
+          width: 100px;
+          top: 0px;
+          right: 80px;
+        }
+        .img-3 {
+          bottom: 30px;
+          left: 20px;
+        }
+        .img-4 {
+          width: 80px;
+          bottom: 45%;
+          left: 45%;
+        }
+        .img-5 {
+          width: 80px;
+          bottom: 120px;
+          right: 20px;
+        }
+      }
     }
   }
 }

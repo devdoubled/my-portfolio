@@ -91,7 +91,6 @@
       justify-content: space-between;
 
       .fun-fact-list {
-        width: 55%;
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
@@ -108,10 +107,6 @@
             color: var(--white);
           }
         }
-      }
-
-      .fun-fact-decor {
-        flex: 1;
       }
     }
   }
@@ -147,6 +142,44 @@
       .fun-fact-title {
         margin-bottom: 80px;
       }
+      .fun-fact-list {
+        width: 50%;
+      }
+      .fun-fact-decor {
+        width: 48%;
+        position: relative;
+        .decor-img {
+          user-select: none;
+          position: absolute;
+          height: auto;
+          object-fit: contain;
+        }
+        .img-1 {
+          width: 100px;
+          top: -100px;
+          left: 150px;
+        }
+        .img-2 {
+          width: 120px;
+          top: -150px;
+          right: 120px;
+        }
+        .img-3 {
+          width: 200px;
+          bottom: 0px;
+          left: 150px;
+        }
+        .img-4 {
+          width: 100px;
+          bottom: 60%;
+          left: 50%;
+        }
+        .img-5 {
+          width: 100px;
+          bottom: 100px;
+          right: 40px;
+        }
+      }
     }
   }
 }
@@ -180,6 +213,43 @@
       margin-bottom: 100px;
       .fun-fact-title {
         margin-bottom: 50px;
+      }
+      .fun-fact-list {
+        width: 55%;
+      }
+      .fun-fact-decor {
+        width: 43%;
+        position: relative;
+        .decor-img {
+          user-select: none;
+          position: absolute;
+          height: auto;
+          object-fit: contain;
+        }
+        .img-1 {
+          width: 80px;
+          top: 0px;
+          left: 50px;
+        }
+        .img-2 {
+          width: 100px;
+          top: -40px;
+          right: 80px;
+        }
+        .img-3 {
+          bottom: 0px;
+          left: 50px;
+        }
+        .img-4 {
+          width: 80px;
+          bottom: 45%;
+          left: 45%;
+        }
+        .img-5 {
+          width: 80px;
+          bottom: 75px;
+          right: 20px;
+        }
       }
     }
   }

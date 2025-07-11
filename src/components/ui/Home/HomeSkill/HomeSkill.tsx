@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import classNames from "classnames/bind";
 import styles from "./HomeSkill.module.scss";
 import SkillCard from "../../SkillCard";
@@ -12,7 +13,33 @@ export default function HomeSkill() {
         <div className={cx("line")}></div>
       </div>
       <div className={cx("home-skill-content")}>
-        <div className={cx("skill-design")}></div>
+        <div className={cx("skill-decor")}>
+          <img
+            src="/images/shape.png"
+            alt="decor"
+            className={cx("decor-img", "img-1")}
+          />
+          <img
+            src="/images/shape-1.png"
+            alt="decor"
+            className={cx("decor-img", "img-2")}
+          />
+          <img
+            src="/images/logo-2.png"
+            alt="decor"
+            className={cx("decor-img", "img-3")}
+          />
+          <img
+            src="/images/shape.png"
+            alt="decor"
+            className={cx("decor-img", "img-4")}
+          />
+          <img
+            src="/images/shape-1.png"
+            alt="decor"
+            className={cx("decor-img", "img-5")}
+          />
+        </div>
         <div className={cx("skill-list")}>
           <div className={cx("skill-card")}>
             <SkillCard
