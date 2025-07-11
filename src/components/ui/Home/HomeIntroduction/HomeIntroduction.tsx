@@ -2,6 +2,7 @@
 import classNames from "classnames/bind";
 import Image from "next/image";
 import { ImQuotesLeft } from "react-icons/im";
+import Link from "next/link";
 import styles from "./HomeIntroduction.module.scss";
 const cx = classNames.bind(styles);
 export default function HomeIntroduction() {
@@ -17,7 +18,9 @@ export default function HomeIntroduction() {
             He is a problem solver with a keyboard, crafting backend logic,
             pixel-perfect UIs, and smooth mobile experiences.
           </div>
-          <button className={cx("contact-btn")}>Contact me!!</button>
+          <Link href="/contact" className={cx("contact-btn")}>
+            Contact me!!
+          </Link>
         </div>
         <div className={cx("self-avatar-wrapper")}>
           <div className={cx("self-avatar")}>

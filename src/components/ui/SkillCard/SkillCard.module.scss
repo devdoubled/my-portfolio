@@ -1,5 +1,4 @@
 .card-item {
-  width: 100%;
   border: 1px solid var(--gray);
 
   .title {
@@ -13,4 +12,12 @@
     padding: 10px;
     color: var(--gray);
   }
+}
+
+.normal {
+  width: 100%;
+}
+
+.special {
+  width: fit-content;
 }

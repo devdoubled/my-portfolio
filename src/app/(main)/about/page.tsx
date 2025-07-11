@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import classNames from "classnames/bind";
 import styles from "./About.module.scss";
 import SkillCard from "@/components/ui/SkillCard";
@@ -36,6 +37,13 @@ export default function About() {
             grow.
           </p>
         </div>
+        <div className={cx("about-avatar")}>
+          <img
+            src="/images/avatar-2.png"
+            alt="avatar"
+            className={cx("avatar-img")}
+          />
+        </div>
       </div>
       <div className={cx("about-skill")}>
         <div className={cx("skill-title")}>
@@ -46,23 +54,37 @@ export default function About() {
           <SkillCard
             title="Languages"
             content="Typescript Javascript HTML/CSS"
+            type="special"
           />
           <SkillCard
             title="Databases"
             content="PostgreSQL MSQL MongoDB Redis"
+            type="special"
           />
           <SkillCard
             title="Frameworkds"
             content="ReactJS NextJS NestJS React Native"
+            type="special"
           />
-          <SkillCard title="Devops/Cloud" content="Docker CI/CD Vercel VPS" />
+          <SkillCard
+            title="Devops/Cloud"
+            content="Docker CI/CD Vercel VPS Clourflare"
+            type="special"
+          />
           <SkillCard
             title="Tools"
             content="Github Redis Insight Postman Swagger"
+            type="special"
           />
           <SkillCard
             title="Other"
             content="REST GraphQL BullMQ Kafka gRPC WebSockets TypeORM Moongoose JWT OAuth"
+            type="special"
+          />
+          <SkillCard
+            title="Soft Skills"
+            content="Communication Collaboration Adaptability Problem-Solving Mindset Time & Self-Management"
+            type="special"
           />
         </div>
       </div>
@@ -74,9 +96,11 @@ export default function About() {
         <div className={cx("fun-fact-content")}>
           <div className={cx("fun-fact-list")}>
             {FUN_FACTS.map((fact) => (
-              <div className={cx("fun-fact-item")} key={fact.id}>
-                {fact.name}
-              </div>
+              <div
+                className={cx("fun-fact-item")}
+                key={fact.id}
+                dangerouslySetInnerHTML={{ __html: fact.name }}
+              />
             ))}
           </div>
           <div className={cx("fun-fact-decor")}></div>

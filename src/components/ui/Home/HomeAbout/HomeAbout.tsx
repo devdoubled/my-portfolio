@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import classNames from "classnames/bind";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import Link from "next/link";
 import styles from "./HomeAbout.module.scss";
 const cx = classNames.bind(styles);
 
@@ -32,10 +34,17 @@ export default function HomeAbout() {
             to projects that make a real impact. Let’s connect and create
             something exceptional together.
           </p>
-          <button className={cx("readmore-btn")}>
+          <Link href="/about" className={cx("readmore-btn")}>
             Read more
             <MdKeyboardDoubleArrowRight />
-          </button>
+          </Link>
+        </div>
+        <div className={cx("about-avatar")}>
+          <img
+            src="/images/avatar-2.png"
+            alt="avatar"
+            className={cx("avatar-img")}
+          />
         </div>
       </div>
     </div>

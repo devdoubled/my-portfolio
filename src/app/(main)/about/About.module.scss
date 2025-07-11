@@ -22,16 +22,22 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .about-script {
-      width: 55%;
-
       .script-text {
         width: 100%;
         margin-bottom: 40px;
         color: var(--gray);
         line-height: 2;
       }
+    }
+
+    .about-avatar {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
   }
 
@@ -55,8 +61,8 @@
 
     .skill-list {
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      display: flex;
+      flex-wrap: wrap;
       gap: 1.25rem;
     }
   }
@@ -89,7 +95,7 @@
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.25rem;
 
         .fun-fact-item {
           display: inline-block;
@@ -97,6 +103,10 @@
           padding: 8px 12px;
           color: var(--gray);
           border: 1px solid var(--gray);
+
+          strong {
+            color: var(--white);
+          }
         }
       }
 
@@ -112,10 +122,19 @@
   .about-wrapper {
     .about-title {
       margin-top: 100px;
-      margin-bottom: 150px;
     }
     .about-content {
-      margin-bottom: 150px;
+      margin-bottom: 100px;
+      .about-script {
+        width: 50%;
+      }
+      .about-avatar {
+        .avatar-img {
+          width: 550px;
+          height: auto;
+          object-fit: cover;
+        }
+      }
     }
     .about-skill {
       margin-bottom: 150px;
@@ -137,10 +156,19 @@
   .about-wrapper {
     .about-title {
       margin-top: 50px;
-      margin-bottom: 100px;
     }
     .about-content {
       margin-bottom: 100px;
+      .about-script {
+        width: 55%;
+      }
+      .about-avatar {
+        .avatar-img {
+          width: 450px;
+          height: auto;
+          object-fit: cover;
+        }
+      }
     }
     .about-skill {
       margin-bottom: 100px;

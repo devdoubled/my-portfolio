@@ -21,16 +21,22 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .about-script {
-      width: 55%;
-
       .script-text {
         width: 100%;
         margin-bottom: 40px;
         color: var(--gray);
         line-height: 2;
       }
+    }
+
+    .about-avatar {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
 
     .readmore-btn {
@@ -76,9 +82,20 @@
   .home-about {
     margin-bottom: 150px;
     .home-about-title {
-      margin-bottom: 80px;
       .line {
         width: 46.8%;
+      }
+    }
+    .home-about-content {
+      .about-script {
+        width: 50%;
+      }
+      .about-avatar {
+        .avatar-img {
+          width: 550px;
+          height: auto;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -89,9 +106,20 @@
   .home-about {
     margin-bottom: 100px;
     .home-about-title {
-      margin-bottom: 50px;
       .line {
         width: 44.5%;
+      }
+    }
+    .home-about-content {
+      .about-script {
+        width: 55%;
+      }
+      .about-avatar {
+        .avatar-img {
+          width: 450px;
+          height: auto;
+          object-fit: cover;
+        }
       }
     }
   }
