@@ -21,3 +21,10 @@
 .special {
   width: fit-content;
 }
+
+/* Mobile Devices (<=767px) */
+@media (max-width: 767px) {
+  .special {
+    width: 100%;
+  }
+}

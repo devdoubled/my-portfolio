@@ -1,72 +1,6 @@
 .about-wrapper {
   width: 100%;
 
-  .about-title {
-    margin-bottom: 50px;
-    .main {
-      display: flex;
-      align-items: center;
-      font-size: 1.75rem;
-      margin-bottom: 10px;
-
-      .sign {
-        color: var(--primary);
-      }
-    }
-    .sub {
-      letter-spacing: 1.2px;
-    }
-  }
-
-  .about-content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .about-script {
-      .script-text {
-        width: 100%;
-        margin-bottom: 40px;
-        color: var(--gray);
-        line-height: 2;
-      }
-    }
-
-    .about-avatar {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-    }
-  }
-
-  .about-skill {
-    width: 100%;
-    .skill-title {
-      display: flex;
-      align-items: center;
-      font-size: 1.75rem;
-
-      .sign {
-        color: var(--primary);
-      }
-
-      .line {
-        height: 1px;
-        margin-left: 20px;
-        background-color: var(--primary);
-      }
-    }
-
-    .skill-list {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.25rem;
-    }
-  }
-
   .about-fun-fact {
     width: 100%;
     .fun-fact-title {
@@ -76,12 +10,6 @@
 
       .sign {
         color: var(--primary);
-      }
-
-      .line {
-        height: 1px;
-        margin-left: 20px;
-        background-color: var(--primary);
       }
     }
 
@@ -117,13 +45,43 @@
   .about-wrapper {
     .about-title {
       margin-top: 100px;
+      .main {
+        display: flex;
+        align-items: center;
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+
+        .sign {
+          color: var(--primary);
+        }
+      }
+      .sub {
+        letter-spacing: 1.2px;
+      }
     }
     .about-content {
-      margin-bottom: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 80px;
+
       .about-script {
         width: 50%;
+        .script-text {
+          width: 100%;
+          margin-bottom: 40px;
+          color: var(--gray);
+          line-height: 2;
+        }
       }
+
       .about-avatar {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
         .avatar-img {
           width: 550px;
           height: auto;
@@ -132,15 +90,30 @@
       }
     }
     .about-skill {
-      margin-bottom: 150px;
+      width: 100%;
+      margin-bottom: 100px;
       .skill-title {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 1.75rem;
+
+        .sign {
+          color: var(--primary);
+        }
+      }
+
+      .skill-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
       }
     }
     .about-fun-fact {
-      margin-bottom: 150px;
+      margin-bottom: 100px;
       .fun-fact-title {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
       }
       .fun-fact-list {
         width: 50%;
@@ -189,13 +162,43 @@
   .about-wrapper {
     .about-title {
       margin-top: 50px;
+      .main {
+        display: flex;
+        align-items: center;
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+
+        .sign {
+          color: var(--primary);
+        }
+      }
+      .sub {
+        letter-spacing: 1.2px;
+      }
     }
     .about-content {
-      margin-bottom: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+
       .about-script {
         width: 55%;
+        .script-text {
+          width: 100%;
+          margin-bottom: 40px;
+          color: var(--gray);
+          line-height: 2;
+        }
       }
+
       .about-avatar {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
         .avatar-img {
           width: 450px;
           height: auto;
@@ -204,15 +207,30 @@
       }
     }
     .about-skill {
-      margin-bottom: 100px;
+      width: 100%;
+      margin-bottom: 50px;
       .skill-title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 1.75rem;
+
+        .sign {
+          color: var(--primary);
+        }
+      }
+
+      .skill-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
       }
     }
     .about-fun-fact {
-      margin-bottom: 100px;
+      margin-bottom: 80px;
       .fun-fact-title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       }
       .fun-fact-list {
         width: 55%;
@@ -249,6 +267,96 @@
           width: 80px;
           bottom: 75px;
           right: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Devices (<=767px) */
+@media (max-width: 767px) {
+  .about-wrapper {
+    .about-title {
+      margin-top: 20px;
+      .main {
+        display: flex;
+        align-items: center;
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+
+        .sign {
+          color: var(--primary);
+        }
+      }
+      .sub {
+        letter-spacing: 1.2px;
+      }
+    }
+    .about-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      margin-bottom: 30px;
+
+      .about-script {
+        width: 100%;
+        .script-text {
+          width: 100%;
+          color: var(--gray);
+          margin-bottom: 20px;
+          line-height: 2;
+        }
+      }
+
+      .about-avatar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        .avatar-img {
+          width: 300px;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+    .about-skill {
+      width: 100%;
+      margin-bottom: 30px;
+      .skill-title {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+
+        .sign {
+          color: var(--primary);
+        }
+      }
+
+      .skill-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+      }
+    }
+    .about-fun-fact {
+      margin-bottom: 50px;
+      .fun-fact-title {
+        margin-bottom: 20px;
+      }
+
+      .fun-fact-content {
+        .fun-fact-list {
+          .fun-fact-item {
+            width: 100%;
+          }
+        }
+        .fun-fact-decor {
+          display: none;
         }
       }
     }

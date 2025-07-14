@@ -1,85 +1,79 @@
 .home-contact {
   width: 100%;
-
-  .home-contact-title {
-    display: flex;
-    align-items: center;
-    font-size: 1.75rem;
-
-    .sign {
-      color: var(--primary);
-    }
-
-    .line {
-      height: 1px;
-      margin-left: 20px;
-      background-color: var(--primary);
-    }
-  }
-
-  .home-contact-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    .contact-script {
-      width: 55%;
-
-      .script-text {
-        width: 100%;
-        line-height: 2;
-        color: var(--gray);
-      }
-    }
-
-    .contact-message {
-      width: fit-content;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1rem;
-      border: 1px solid var(--gray);
-
-      .message-title {
-        color: var(--white);
-        font-weight: 500;
-      }
-
-      .message-mail {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        color: var(--gray);
-
-        &:hover {
-          color: var(--primary);
-        }
-      }
-
-      .message-item {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        color: var(--gray);
-        transition: all 0.2s;
-
-        &:hover {
-          text-decoration: underline;
-          color: var(--primary);
-        }
-      }
-    }
-  }
 }
 
 /* 2K/QHD (1920px-2559px) */
 @media (min-width: 1920px) and (max-width: 2559px) {
   .home-contact {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     .home-contact-title {
-      margin-bottom: 80px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+      font-size: 1.75rem;
+
+      .sign {
+        color: var(--primary);
+      }
+
       .line {
         width: 20%;
+        height: 1px;
+        margin-left: 20px;
+        background-color: var(--primary);
+      }
+    }
+    .home-contact-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  
+      .contact-script {
+        width: 55%;
+  
+        .script-text {
+          width: 100%;
+          line-height: 2;
+          color: var(--gray);
+        }
+      }
+  
+      .contact-message {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid var(--gray);
+  
+        .message-title {
+          color: var(--white);
+          font-weight: 500;
+        }
+  
+        .message-mail {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--gray);
+  
+          &:hover {
+            color: var(--primary);
+          }
+        }
+  
+        .message-item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--gray);
+          transition: all 0.2s;
+  
+          &:hover {
+            text-decoration: underline;
+            color: var(--primary);
+          }
+        }
       }
     }
   }
@@ -88,11 +82,147 @@
 /* Full HD (1600px-1919px) */
 @media (min-width: 1600px) and (max-width: 1919px) {
   .home-contact {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     .home-contact-title {
-      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      font-size: 1.75rem;
+
+      .sign {
+        color: var(--primary);
+      }
+
       .line {
         width: 15%;
+        height: 1px;
+        margin-left: 20px;
+        background-color: var(--primary);
+      }
+    }
+    .home-contact-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  
+      .contact-script {
+        width: 55%;
+  
+        .script-text {
+          width: 100%;
+          line-height: 2;
+          color: var(--gray);
+        }
+      }
+  
+      .contact-message {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid var(--gray);
+  
+        .message-title {
+          color: var(--white);
+          font-weight: 500;
+        }
+  
+        .message-mail {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--gray);
+  
+          &:hover {
+            color: var(--primary);
+          }
+        }
+  
+        .message-item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--gray);
+          transition: all 0.2s;
+  
+          &:hover {
+            text-decoration: underline;
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Devices (<=767px) */
+@media (max-width: 767px) {
+  .home-contact {
+    margin-bottom: 50px;
+    .home-contact-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+
+      .sign {
+        color: var(--primary);
+      }
+
+      .line {
+        display: none;
+      }
+    }
+    .home-contact-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 1.5rem;
+  
+      .contact-script {
+        width: 100%;
+  
+        .script-text {
+          width: 100%;
+          line-height: 2;
+          color: var(--gray);
+        }
+      }
+  
+      .contact-message {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid var(--gray);
+  
+        .message-title {
+          color: var(--white);
+          font-weight: 500;
+        }
+  
+        .message-mail {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--gray);
+        }
+  
+        .message-item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--gray);
+          transition: all 0.2s;
+  
+          &:active {
+            text-decoration: underline;
+            color: var(--primary);
+          }
+        }
       }
     }
   }

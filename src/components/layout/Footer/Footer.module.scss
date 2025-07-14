@@ -1,10 +1,10 @@
 .footer-wrapper {
+  height: var(--footer-height);
   background-color: var(--background);
   border-top: 1px solid var(--gray);
 
   .footer-container {
-    margin: 0 var(--page-margin);
-    padding: 1.25rem 0;
+    margin: 1.25rem var(--page-margin);
 
     .footer-content {
       display: flex;

@@ -2,12 +2,12 @@ import classNames from "classnames/bind";
 import styles from "./SkillCard.module.scss";
 const cx = classNames.bind(styles);
 
-interface SkillCard {
+interface SkillCardProps {
   title: string;
   content: string;
   type: string;
 }
-export default function SkillCard({ title, content, type }: SkillCard) {
+export default function SkillCard({ title, content, type }: SkillCardProps) {
   return (
     <div
       className={cx("card-item", {

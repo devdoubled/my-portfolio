@@ -55,15 +55,15 @@ export default function HomeSkill() {
               type="normal"
             />
             <SkillCard
-              title="Other"
-              content="REST GraphQL BullMQ Kafka gRPC WebSockets TypeORM Moongoose JWT OAuth"
+              title="Frameworkds"
+              content="ReactJS NextJS NestJS React Native"
               type="normal"
             />
           </div>
           <div className={cx("skill-card")}>
             <SkillCard
-              title="Frameworkds"
-              content="ReactJS NextJS NestJS React Native"
+              title="Other"
+              content="REST GraphQL BullMQ Kafka gRPC WebSockets TypeORM Moongoose JWT OAuth"
               type="normal"
             />
             <SkillCard

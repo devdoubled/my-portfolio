@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import classNames from "classnames/bind";
-import Image from "next/image";
 import { ImQuotesLeft } from "react-icons/im";
 import Link from "next/link";
 import styles from "./HomeIntroduction.module.scss";
@@ -24,11 +23,10 @@ export default function HomeIntroduction() {
         </div>
         <div className={cx("self-avatar-wrapper")}>
           <div className={cx("self-avatar")}>
-            <Image
+            <img
               src="/images/avatar.png"
-              width={600}
-              height={600}
               alt="Picture of the author"
+              className={cx("avatar-img")}
             />
             <div className={cx("avatar-desc")}>
               <div className={cx("shape")}></div>

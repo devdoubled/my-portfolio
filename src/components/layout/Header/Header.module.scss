@@ -3,9 +3,10 @@
   top: 0;
   height: var(--header-height);
   background-color: var(--background);
-  z-index: 1000;
+  z-index: 1001;
 
   .header-container {
+    position: relative;
     height: 100%;
     display: flex;
     align-items: center;
@@ -17,28 +18,88 @@
     .header-logo {
       display: flex;
       align-items: center;
+
+      .logo-img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+      }
     }
+  }
+}
 
-    .header-nav {
-      display: flex;
-      align-items: center;
-      column-gap: 2rem;
+/* 2K/QHD (1920px-2559px) */
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .header-wrapper {
+    .header-container {
+      .mobile-menu-btn {
+        display: none;
+      }
+      .header-nav {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
 
-      .header-nav-link {
-        color: var(--gray);
+        .header-nav-link {
+          color: var(--gray);
 
-        .nav-sign {
-          color: var(--primary);
+          .nav-sign {
+            color: var(--primary);
+          }
+
+          &:hover {
+            color: var(--primary);
+            transition: all 0.2s;
+          }
         }
 
-        &:hover {
-          color: var(--primary);
-          transition: all 0.2s;
+        .header-nav-link--active {
+          color: var(--white);
         }
       }
+    }
+  }
+}
 
-      .header-nav-link--active {
-        color: var(--white);
+/* Full HD (1600px-1919px) */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .header-wrapper {
+    .header-container {
+      .mobile-menu-btn {
+        display: none;
+      }
+      .header-nav {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+
+        .header-nav-link {
+          color: var(--gray);
+
+          .nav-sign {
+            color: var(--primary);
+          }
+
+          &:hover {
+            color: var(--primary);
+            transition: all 0.2s;
+          }
+        }
+
+        .header-nav-link--active {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Devices (<=767px) */
+@media (max-width: 767px) {
+  .header-wrapper {
+    .header-container {
+      .header-nav {
+        display: none;
       }
     }
   }

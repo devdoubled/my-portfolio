@@ -19,7 +19,7 @@ export const HEADER_NAV: NavItem[] = [
     path: "/about",
   },
   {
-    name: "contact",
+    name: "contacts",
     path: "/contact",
   },
 ];
