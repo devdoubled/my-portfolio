@@ -33,17 +33,17 @@
       flex-direction: column;
       row-gap: 10px;
       padding: 1.5rem 1.25rem;
-  
+
       .project-name {
         font-size: 1.75rem;
         font-weight: 500;
       }
-  
+
       .project-desc {
         height: 90px;
         margin-bottom: 10px;
         color: var(--gray);
-  
+
         .desc-text {
           word-wrap: break-word;
           white-space: normal;
@@ -54,12 +54,12 @@
           -webkit-line-clamp: 3;
         }
       }
-  
+
       .project-action {
         display: flex;
         align-items: center;
         gap: 1rem;
-  
+
         .action-btn {
           position: relative;
           cursor: pointer;
@@ -74,11 +74,11 @@
           overflow: hidden;
           z-index: 1;
           transition: color 0.5s ease;
-  
+
           &:hover {
             color: var(--white);
           }
-  
+
           &::before {
             content: "";
             position: absolute;
@@ -90,12 +90,12 @@
             transition: all 0.5s ease;
             z-index: -1;
           }
-  
+
           &:hover::before {
             left: 0;
           }
         }
-  
+
         .view-btn {
           position: relative;
           cursor: pointer;
@@ -110,11 +110,11 @@
           overflow: hidden;
           z-index: 1;
           transition: color 0.5s ease;
-  
+
           &:hover {
             color: var(--white);
           }
-  
+
           &::before {
             content: "";
             position: absolute;
@@ -126,7 +126,7 @@
             transition: all 0.5s ease;
             z-index: -1;
           }
-  
+
           &:hover::before {
             left: 0;
           }
@@ -141,10 +141,9 @@
   .project-item {
     .project-image-container {
       width: 100%;
-      height: fit-content;
       .project-image {
         width: 100%;
-        height: auto;
+        height: 230px;
         object-fit: cover;
       }
     }
@@ -162,17 +161,17 @@
       flex-direction: column;
       row-gap: 10px;
       padding: 1.5rem 1.25rem;
-  
+
       .project-name {
         font-size: 1.75rem;
         font-weight: 500;
       }
-  
+
       .project-desc {
         height: 90px;
         margin-bottom: 10px;
         color: var(--gray);
-  
+
         .desc-text {
           word-wrap: break-word;
           white-space: normal;
@@ -183,12 +182,12 @@
           -webkit-line-clamp: 3;
         }
       }
-  
+
       .project-action {
         display: flex;
         align-items: center;
         gap: 1rem;
-  
+
         .action-btn {
           position: relative;
           cursor: pointer;
@@ -203,11 +202,11 @@
           overflow: hidden;
           z-index: 1;
           transition: color 0.5s ease;
-  
+
           &:hover {
             color: var(--white);
           }
-  
+
           &::before {
             content: "";
             position: absolute;
@@ -219,12 +218,12 @@
             transition: all 0.5s ease;
             z-index: -1;
           }
-  
+
           &:hover::before {
             left: 0;
           }
         }
-  
+
         .view-btn {
           position: relative;
           cursor: pointer;
@@ -239,11 +238,11 @@
           overflow: hidden;
           z-index: 1;
           transition: color 0.5s ease;
-  
+
           &:hover {
             color: var(--white);
           }
-  
+
           &::before {
             content: "";
             position: absolute;
@@ -255,7 +254,7 @@
             transition: all 0.5s ease;
             z-index: -1;
           }
-  
+
           &:hover::before {
             left: 0;
           }
@@ -292,17 +291,17 @@
       flex-direction: column;
       row-gap: 10px;
       padding: 1rem 1.25rem;
-  
+
       .project-name {
         font-size: 1.625rem;
         font-weight: 500;
       }
-  
+
       .project-desc {
         height: 68px;
         margin-bottom: 5px;
         color: var(--gray);
-  
+
         .desc-text {
           word-wrap: break-word;
           white-space: normal;
@@ -313,12 +312,12 @@
           -webkit-line-clamp: 3;
         }
       }
-  
+
       .project-action {
         display: flex;
         align-items: center;
         gap: 1rem;
-  
+
         .action-btn {
           position: relative;
           cursor: pointer;
@@ -333,11 +332,11 @@
           overflow: hidden;
           z-index: 1;
           transition: color 0.5s ease;
-  
+
           &:active {
             color: var(--white);
           }
-  
+
           &::before {
             content: "";
             position: absolute;
@@ -349,12 +348,12 @@
             transition: all 0.5s ease;
             z-index: -1;
           }
-  
+
           &:active::before {
             left: 0;
           }
         }
-  
+
         .view-btn {
           position: relative;
           cursor: pointer;
@@ -369,11 +368,11 @@
           overflow: hidden;
           z-index: 1;
           transition: color 0.5s ease;
-  
+
           &:active {
             color: var(--white);
           }
-  
+
           &::before {
             content: "";
             position: absolute;
@@ -385,7 +384,7 @@
             transition: all 0.5s ease;
             z-index: -1;
           }
-  
+
           &:active::before {
             left: 0;
           }

@@ -42,7 +42,7 @@ export default function Footer() {
               <FaLinkedin className="w-6 h-6" />
             </Link>
             <Link
-              href="https://www.facebook.com/leevuxx"
+              href="https://www.facebook.com/devdoubled"
               target="_blank"
               className={cx("footer-social-link")}
               aria-label="Facebook"

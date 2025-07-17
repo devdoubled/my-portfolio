@@ -43,7 +43,7 @@ export default function Contact() {
           <div className={cx("message-item")}>
             <FaFacebook className="w-6 h-6" />
             <Link
-              href="https://www.facebook.com/leevuxx"
+              href="https://www.facebook.com/devdoubled"
               target="_blank"
               aria-label="Facebook"
             >
@@ -77,7 +77,7 @@ export default function Contact() {
             <span className={cx("text")}>@Duy Lee</span>
           </Link>
           <Link
-            href="https://www.facebook.com/leevuxx"
+            href="https://www.facebook.com/devdoubled"
             target="_blank"
             className={cx("media")}
             aria-label="GitHub"

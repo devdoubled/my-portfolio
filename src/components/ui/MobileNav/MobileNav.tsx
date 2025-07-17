@@ -51,7 +51,7 @@ export default function MobileNav({ pathname, onClose }: MobileNavProps) {
             <FaLinkedin className="w-7 h-7" />
           </Link>
           <Link
-            href="https://www.facebook.com/leevuxx"
+            href="https://www.facebook.com/devdoubled"
             target="_blank"
             className={cx("social-link")}
           >

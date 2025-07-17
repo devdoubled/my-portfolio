@@ -39,7 +39,7 @@ export default function HomeContact() {
           <div className={cx("message-item")}>
             <FaFacebook className="w-6 h-6" />
             <Link
-              href="https://www.facebook.com/leevuxx"
+              href="https://www.facebook.com/devdoubled"
               target="_blank"
               aria-label="Facebook"
             >
