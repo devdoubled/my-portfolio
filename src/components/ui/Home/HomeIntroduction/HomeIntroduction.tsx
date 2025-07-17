@@ -32,7 +32,7 @@ export default function HomeIntroduction() {
               <div className={cx("shape")}></div>
               <span className={cx("text")}>
                 Currently working on{" "}
-                <span className={cx("highlight")}>Portfolio</span>
+                <span className={cx("highlight")}>passion</span>
               </span>
             </div>
           </div>
