@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import classNames from "classnames/bind";
 import { FaGithub } from "react-icons/fa";
-import { RiCodeView } from "react-icons/ri";
+// import { RiCodeView } from "react-icons/ri";
 import Link from "next/link";
 import { ProjectItem } from "@/interfaces/project_item";
 
@@ -33,10 +33,10 @@ export default function ProjectCard({ project }: Props) {
             <FaGithub className="w-5 h-5" />
             Github
           </Link>
-          <Link href="/" className={cx("view-btn")}>
+          {/* <Link href="/" className={cx("view-btn")}>
             <RiCodeView className="w-5 h-5" />
             View
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
