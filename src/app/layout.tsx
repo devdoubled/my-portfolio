@@ -4,8 +4,11 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: "DevDD | Portfolio",
+  title: "DuyLee | Portfolio",
   description: "Welcome to my personal portfolio website",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
