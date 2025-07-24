@@ -1,18 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import classNames from "classnames/bind";
+import { notFound } from "next/navigation";
 import styles from "./ProjectDetail.module.scss";
 import { DETAIL_PROJECTS } from "@/constants/projects";
-
 const cx = classNames.bind(styles);
 
-interface Props {
-  params: { id: string };
-}
+export default async function ProjectDetail(context: {
+  params: Promise<{ id?: string }>;
+}) {
+  const { id } = await context.params;
 
-export default function ProjectDetail({ params }: Props) {
-  const project = DETAIL_PROJECTS.find((p) => p.id === params.id);
+  if (!id) {
+    notFound();
+  }
 
-  if (!project) return <div>Not found</div>;
+  const project = DETAIL_PROJECTS.find((p) => p.id === id);
+
+  if (!project) {
+    notFound();
+  }
 
   return (
     <div className={cx("project-detail-wrapper")}>
@@ -42,7 +48,9 @@ export default function ProjectDetail({ params }: Props) {
         <span className={cx("text")}>demo</span>
       </div>
       <div className={cx("image-list")}>
-        {project.id === "2" && project.video && project.video.length > 0
+        {project.title.toLowerCase().includes("healthfeast") &&
+        project.video &&
+        project.video.length > 0
           ? project.video.map((url, _index) => (
               <iframe
                 key={_index}
