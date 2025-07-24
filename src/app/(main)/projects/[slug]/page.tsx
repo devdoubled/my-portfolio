@@ -5,11 +5,11 @@ import { DETAIL_PROJECTS } from "@/constants/projects";
 
 const cx = classNames.bind(styles);
 
-interface Props {
+export default function ProjectDetail({
+  params,
+}: {
   params: { slug: string };
-}
-
-export default function ProjectDetail({ params }: Props) {
+}) {
   const { slug } = params;
 
   const project = DETAIL_PROJECTS.find((p) => p.slug === slug);
