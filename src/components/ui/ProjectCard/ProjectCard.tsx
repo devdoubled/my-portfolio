@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import classNames from "classnames/bind";
 import { FaGithub } from "react-icons/fa";
-// import { RiCodeView } from "react-icons/ri";
+import { RiCodeView } from "react-icons/ri";
 import Link from "next/link";
 import { ProjectItem } from "@/interfaces/project_item";
 
@@ -13,6 +13,10 @@ interface Props {
 }
 
 export default function ProjectCard({ project }: Props) {
+  const viewLink =
+    project.title === "My Portfolio"
+      ? "https://devdoubled.info.vn/"
+      : `/projects/${project.slug}`;
   return (
     <div className={cx("project-item")}>
       <div className={cx("project-image-container")}>
@@ -33,10 +37,14 @@ export default function ProjectCard({ project }: Props) {
             <FaGithub className="w-5 h-5" />
             Github
           </Link>
-          {/* <Link href="/" className={cx("view-btn")}>
+          <Link
+            href={viewLink}
+            target={project.title === "My Portfolio" ? "_blank" : undefined}
+            className={cx("view-btn")}
+          >
             <RiCodeView className="w-5 h-5" />
             View
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>
