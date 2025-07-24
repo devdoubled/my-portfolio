@@ -4,68 +4,69 @@ import { SmallProjectItem } from "@/interfaces/small_project_item";
 
 export const TOP_PROJECTS: ProjectItem[] = [
   {
+    id: "1",
     image: "/images/VSAT.png",
     stack: "JS React.js Nest.js PostgreSQL Docker",
     title: "VSAT",
     desc: "Building VSAT to solve the problem of generic SAT prep by delivering personalized study plans and progress tracking for test centers.",
     link: "https://github.com/orgs/VSAT-SAT-learning-center/repositories",
-    slug: "vsat",
   },
   {
+    id: "2",
     image: "/images/HealthFeast.jpg",
     stack: "JS React Native .NET MongoDB Cloudinary",
     title: "HealthFeast",
     desc: "Helping users manage their health by making Vietnamese food nutrition tracking and daily activity monitoring simple and accessible.",
     link: "https://github.com/devdoubled/HealthFeast",
-    slug: "healthfeast",
   },
   {
+    id: "3",
     image: "/images/Pesterin.png",
     stack: "JS React.js Express.js MongoDB Firebase",
     title: "Pesterin",
     desc: "Giving artists a safe, interactive space to share and discover artwork with real-time chat and AI-powered image moderation.",
     link: "https://github.com/orgs/Pesterin-Artwork-Platform/repositories",
-    slug: "pesterin",
   },
 ];
 
 export const PROJECTS: ProjectItem[] = [
   {
+    id: "1",
     image: "/images/VSAT.png",
     stack: "JS React.js Nest.js PostgreSQL Docker",
     title: "VSAT",
     desc: "Building VSAT to solve the problem of generic SAT prep by delivering personalized study plans and progress tracking for test centers.",
     link: "https://github.com/orgs/VSAT-SAT-learning-center/repositories",
-    slug: "vsat",
   },
   {
+    id: "2",
     image: "/images/HealthFeast.jpg",
     stack: "JS React Native .NET MongoDB Cloudinary",
     title: "HealthFeast",
     desc: "Helping users manage their health by making Vietnamese food nutrition tracking and daily activity monitoring simple and accessible.",
     link: "https://github.com/devdoubled/HealthFeast",
-    slug: "healthfeast",
   },
   {
+    id: "3",
     image: "/images/Pesterin.png",
     stack: "JS React.js Express.js MongoDB Firebase",
     title: "Pesterin",
     desc: "Giving artists a safe, interactive space to share and discover artwork with real-time chat and AI-powered image moderation.",
     link: "https://github.com/orgs/Pesterin-Artwork-Platform/repositories",
-    slug: "pesterin",
   },
   {
+    id: "4",
     image: "/images/Portfolio.png",
     stack: "TS Next.js HTML/SCSS",
     title: "My Portfolio",
     desc: "An online resume that highlights my projects, tech skills, and practical experience solving real-world challenges.",
     link: "https://github.com/devdoubled/my-portfolio",
-    slug: "portfolio",
   },
 ];
 
 export const DETAIL_PROJECTS: DetailProjectItem[] = [
   {
+    id: "1",
     title: "VSAT - The SAT Game-Changer",
     desc: "An intelligent learning ecosystem that transforms standardized test preparation through machine learning and adaptive algorithms, serving educational institutions and individual learners.",
     stack:
@@ -81,9 +82,9 @@ export const DETAIL_PROJECTS: DetailProjectItem[] = [
       "Recognized as Runner-Up at HIU Startup 2025 for innovation and practical impact in SAT preparation.",
     ],
     image: ["/images/VSAT.png"],
-    slug: "vsat",
   },
   {
+    id: "2",
     title: "HealthFeast - AI Nutrition Assistant",
     desc: "A health companion app that revolutionizes diet tracking for Vietnamese cuisine through computer vision and personalized recommendations.",
     stack:
@@ -102,9 +103,9 @@ export const DETAIL_PROJECTS: DetailProjectItem[] = [
       "https://www.youtube.com/embed/SyR3XSyW4Vs",
       "https://www.youtube.com/embed/XSxrQiasYQk",
     ],
-    slug: "healthfeast",
   },
   {
+    id: "3",
     title: "Pesterin - Next-Gen Art Community",
     desc: "A creator ecosystem combining social features with professional tools for digital artists and collectors.",
     stack:
@@ -120,7 +121,6 @@ export const DETAIL_PROJECTS: DetailProjectItem[] = [
       "Created an artist analytics dashboard with Chart.js for clear data visualization.",
     ],
     image: ["/images/Pesterin.png"],
-    slug: "pesterin",
   },
 ];
 

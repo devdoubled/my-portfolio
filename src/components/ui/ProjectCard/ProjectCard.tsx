@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: Props) {
   const viewLink =
     project.title === "My Portfolio"
       ? "https://devdoubled.info.vn/"
-      : `/projects/${project.slug}`;
+      : `/projects/${project.id}`;
   return (
     <div className={cx("project-item")}>
       <div className={cx("project-image-container")}>

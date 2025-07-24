@@ -5,18 +5,14 @@ import { DETAIL_PROJECTS } from "@/constants/projects";
 
 const cx = classNames.bind(styles);
 
-export default function ProjectDetail({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const { slug } = params;
+interface Props {
+  params: { id: string };
+}
 
-  const project = DETAIL_PROJECTS.find((p) => p.slug === slug);
+export default function ProjectDetail({ params }: Props) {
+  const project = DETAIL_PROJECTS.find((p) => p.id === params.id);
 
-  if (!project) {
-    return <div>Project not found</div>;
-  }
+  if (!project) return <div>Not found</div>;
 
   return (
     <div className={cx("project-detail-wrapper")}>
@@ -46,9 +42,7 @@ export default function ProjectDetail({
         <span className={cx("text")}>demo</span>
       </div>
       <div className={cx("image-list")}>
-        {project.slug === "healthfeast" &&
-        project.video &&
-        project.video.length > 0
+        {project.id === "2" && project.video && project.video.length > 0
           ? project.video.map((url, _index) => (
               <iframe
                 key={_index}
