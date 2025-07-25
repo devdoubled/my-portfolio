@@ -5,7 +5,7 @@ import { SmallProjectItem } from "@/interfaces/small_project_item";
 export const TOP_PROJECTS: ProjectItem[] = [
   {
     id: "1",
-    image: "/images/VSAT.png",
+    image: "/images/VSAT/1.png",
     stack: "JS React.js Nest.js PostgreSQL Docker",
     title: "VSAT",
     desc: "Building VSAT to solve the problem of generic SAT prep by delivering personalized study plans and progress tracking for test centers.",
@@ -21,7 +21,7 @@ export const TOP_PROJECTS: ProjectItem[] = [
   },
   {
     id: "3",
-    image: "/images/Pesterin.png",
+    image: "/images/Pesterin/1.png",
     stack: "JS React.js Express.js MongoDB Firebase",
     title: "Pesterin",
     desc: "Giving artists a safe, interactive space to share and discover artwork with real-time chat and AI-powered image moderation.",
@@ -32,7 +32,7 @@ export const TOP_PROJECTS: ProjectItem[] = [
 export const PROJECTS: ProjectItem[] = [
   {
     id: "1",
-    image: "/images/VSAT.png",
+    image: "/images/VSAT/1.png",
     stack: "JS React.js Nest.js PostgreSQL Docker",
     title: "VSAT",
     desc: "Building VSAT to solve the problem of generic SAT prep by delivering personalized study plans and progress tracking for test centers.",
@@ -48,7 +48,7 @@ export const PROJECTS: ProjectItem[] = [
   },
   {
     id: "3",
-    image: "/images/Pesterin.png",
+    image: "/images/Pesterin/1.png",
     stack: "JS React.js Express.js MongoDB Firebase",
     title: "Pesterin",
     desc: "Giving artists a safe, interactive space to share and discover artwork with real-time chat and AI-powered image moderation.",
