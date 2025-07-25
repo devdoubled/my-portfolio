@@ -81,7 +81,7 @@ export const DETAIL_PROJECTS: DetailProjectItem[] = [
       "Conducted weekly code reviews to maintain high code quality and consistency.",
       "Recognized as Runner-Up at HIU Startup 2025 for innovation and practical impact in SAT preparation.",
     ],
-    image: ["/images/VSAT.png"],
+    image: Array.from({ length: 55 }, (_, i) => `/images/VSAT/${i + 1}.png`),
   },
   {
     id: "2",
@@ -120,7 +120,10 @@ export const DETAIL_PROJECTS: DetailProjectItem[] = [
       "Optimized MongoDB queries to improve response times and database efficiency.",
       "Created an artist analytics dashboard with Chart.js for clear data visualization.",
     ],
-    image: ["/images/Pesterin.png"],
+    image: Array.from(
+      { length: 26 },
+      (_, i) => `/images/Pesterin/${i + 1}.png`
+    ),
   },
 ];
 
